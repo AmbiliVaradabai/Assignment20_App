@@ -17,6 +17,7 @@ export class ListUserComponent implements OnInit {
     this.getAllUsers()
   }
 
+  //Code to get all resgitered users
   getAllUsers(){
     this._user.getAllUsers()
     .subscribe(
@@ -24,6 +25,8 @@ export class ListUserComponent implements OnInit {
       err => console.log (err)
     )  
   }
+
+  //logic for Go to User link
   goToAddUser(){
     this.router.navigate(['adduser'])
   } 

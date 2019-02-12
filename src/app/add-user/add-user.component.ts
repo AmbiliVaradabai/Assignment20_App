@@ -21,7 +21,6 @@ export class AddUserComponent implements OnInit {
     .subscribe(
       res => {  
         localStorage.setItem("UserName",res.FirstName + ' '+ res.LastName)
-        //console.log(res.FirstName + ' '+ res.LastName)
         this._router.navigate(['/success'])  
       },
       err => console.log ("err")
@@ -29,7 +28,6 @@ export class AddUserComponent implements OnInit {
   }
 
   resetForm(){
-    console.log("reset")
     this.registerUserData= {
       FirstName :"",
       LastName :"",

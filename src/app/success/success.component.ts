@@ -13,10 +13,12 @@ export class SuccessComponent implements OnInit {
   ngOnInit() {
   }
 
+  // Logic for Go back users
   goBacktoUsers(){
     this._router.navigate(['users'])
   }
 
+  // Logic for go to document page
   goToDocuments(){
     this._router.navigate(['documents'])
   }
